@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portifolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-      </style>
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Thiago Vasconcellos</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contacts</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portifolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="https://kit.fontawesome.com/767033399f.js" crossorigin="anonymous"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Thiago Vasconcellos</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="mobile-navbar">
+    <div class="logo">Thiago Vasconcellos</div>
+    <div class="mobile-menu">
+      <div class="mobile-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="mobile-navbar">
-      <div class="logo">Thiago Vasconcellos</div>
-      <div class="mobile-menu">
-        <div class="mobile-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
       </div>
-    </nav>
-    <section id="profile">
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Thiago Vasconcellos picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Thiago Vasconcellos</h1>
+      <p class="section__text__p2">Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Dowload CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href = './#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="linkedin" class="icon"
+          onclick='location.href="https://www.linkedin.com/in/thiago-vasconcellos-b1202228b/"' />
+        <img src="./assets/github.png" alt="github" class="icon"
+          onclick='location.href="https://github.com/thvasconn"' />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Thiago Vasconcellos picture">
+        <img src="./assets/about-pic.png" alt="Profile Picture" class='about-pic' />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Thiago Vasconcellos</h1>
-        <p class="section__text__p2">
-          Developer
-        </p>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <i class="icon fa-solid fa-medal"></i>
+            <h3>Experience</h3>
+            <p>2+ Years </br> FrontEnd Development</p>
+          </div>
+          <div class="details-container">
+            <i class="icon fa-solid fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>B.Sc. Bachalors Degree </br>M.Sc. Masters Degree</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor earum consequuntur enim nulla iste
+            architecto inventore sit saepe, provident alias id aliquam laboriosam? Libero dicta quod ipsam voluptates.
+            Tenetur?
+          </p>
+        </div>
       </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>

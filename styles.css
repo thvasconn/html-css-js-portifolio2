@@ -130,3 +130,141 @@ a:hover {
 .mobile-icon span:first-child {
     transform: none
 }
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+    cursor: default;
+
+}
+
+.section__text p {
+    font-weight: 600;
+    cursor: default;
+
+}
+
+.section__text__p1 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    cursor: default;
+
+}
+
+.section__text__p2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: default;
+
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    cursor: default;
+}
+
+
+.btn-container button {
+    border-radius: 50px;
+    width: 8rem;
+    height: 3rem;
+    border: 0.1rem solid rgb(62, 62, 62);
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.btn-color-1 {
+    background: rgb(62, 62, 62);
+    color: white;
+}
+
+.btn-color-2 {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.btn-color-1:hover {
+    background-color: black;
+}
+
+.btn-color-2:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    min-height: 100vh;
+}
+
+.section-container .section__pic-container {
+    width: 400px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.section-container .section__pic-container img{
+    border-radius: 35px;
+    width: 400px;
+    height: 400px;
+    
+}
+
+
+
+.about-containers {
+    display: flex;
+    padding: 15px;
+    gap: 3rem;
+}
+
+.details-container {
+    text-align: center;
+    border: 1px solid rgb(162, 162, 162);
+    width: 400px;
+    border-radius: 15px;
+    padding: 15px;
+}
