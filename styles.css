@@ -371,22 +371,20 @@ section {
 }
 
 .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2.5rem;
-    justify-content: space-around;
+    justify-content:lef;
+    align-items: flex-start;
 }
 
 article {
-    display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
 
 }
 
-article i {
-    cursor: none;
+.icon {
+    cursor: default;
 }
