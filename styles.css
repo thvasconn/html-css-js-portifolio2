@@ -195,7 +195,7 @@ section {
     border-radius: 50px;
     width: 8rem;
     height: 3rem;
-    border: 0.1rem solid rgb(62, 62, 62);
+    border: 0.1rem solid rgb(88, 88, 88);
     padding: 10px;
     cursor: pointer;
     font-weight: 600;
@@ -233,28 +233,37 @@ section {
     height: 2rem;
 }
 
+#about {
+    position: relative;
+}
+
 .section-container {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 4rem;
     height: 80%;
 }
 
 #about p {
-    color: ;
+    font-size: 1rem;
+}
+
+#about h1 {
+    font-weight: 600;
+    margin-top: -20px;
 }
 
 .section-container .section__pic-container {
     width: 400px;
     height: 800px;
-    margin: 0 auto;
+    margin: auto 0;
 }
 
 .about-pic {
     position: relative;
     top: 50%;
     transform: translateY(-72%);
-    border-radius: 35px;
+    border-radius: 2rem;
     width: 400px;
     height: 400px;
     
@@ -264,19 +273,22 @@ section {
 
 .about-containers {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .details-container {
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 1px solid rgb(162, 162, 162);
+    border: 0.1rem solid rgb(164, 164, 164);
     width:100%;
-    border-radius: 25px;
-    padding: 15px;
-    height: 160px;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    height: auto;
     
 }
 
@@ -292,12 +304,16 @@ section {
 
 }
 
+.about-details-container .text-container{
+    text-align: center;
+}
+
 .arrows {
     width: 40px;
     height: 40px;
-    position: absolute;
-    right: 3rem;
-    bottom: -93%;
+    position: relative;
+    right: 5rem;
+    bottom: -89%;
     cursor: pointer;
 }
 
@@ -308,6 +324,69 @@ section {
 
 }
 
+.texts h1{
+    margin-top: -1.5rem;
+}
+
 .details-container i {
     font-size: 1.6rem;
+}
+
+#experience {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#experience .about-container {
+    gap: 2.5rem;
+}
+
+#experience .details-container{
+    padding: 2rem;
+}
+
+.experience-details-container .about-container {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: row;
+}
+.experience-subtitle {
+    color: rgb(112, 112, 112);
+    font-weight: 550;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;   
+}
+
+.experience-details-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    top: 25%;
+    
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+
+}
+
+article i {
+    cursor: none;
 }
