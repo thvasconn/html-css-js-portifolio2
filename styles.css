@@ -222,6 +222,7 @@ section {
 }
 
 #socials-container {
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     margin-top: 1rem;
@@ -388,3 +389,14 @@ article {
 .icon {
     cursor: default;
 }
+
+#socials-container .icon {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#socials-container .icon:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* sombra arredondada */
+
+}
+
