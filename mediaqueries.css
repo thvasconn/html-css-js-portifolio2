@@ -1,8 +1,261 @@
+/* mediaqueries.css - Correção completa */
+
+/* Menu mobile */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
-        display: none;
+      display: none;
     }
+    
     #mobile-navbar {
-        display: flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      padding: 1rem;
     }
-}
+    
+    /* Reset geral para todas as seções */
+    section {
+      height: auto !important;
+      min-height: auto !important;
+      margin: 0 1rem !important;
+      padding: 3rem 0 !important;
+      overflow: hidden;
+    }
+    
+    /* Remover TODAS as arrows no mobile */
+    .arrows {
+      display: none !important;
+    }
+    
+    /* Correções para o perfil */
+    #profile {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+      height: auto !important;
+    }
+    
+    /* Correção específica para a foto do perfil */
+    #profile .section__pic-container {
+      width: 200px !important;
+      height: 200px !important;
+      margin: 0 auto !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      overflow: hidden !important;
+    }
+    
+    #profile .section__pic-container img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important; /* Mantém a proporção da imagem */
+      object-position: center !important; /* Centraliza a imagem */
+    }
+    
+    /* Correções para a seção about */
+    .section-container {
+      flex-direction: column !important;
+      height: auto !important;
+      gap: 2rem !important;
+    }
+    
+    /* Correção específica para a foto da seção about */
+    #about .section__pic-container {
+      width: 200px !important;
+      height: 200px !important;
+      margin: 0 auto !important;
+      overflow: hidden !important;
+    }
+    
+    #about .section__pic-container img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+    }
+    
+    .about-pic {
+      position: static !important;
+      transform: none !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    
+    .about-details-container {
+      position: static !important;
+      transform: none !important;
+      padding: 0 !important;
+    }
+    
+    .about-containers {
+      flex-direction: column !important;
+      gap: 1rem !important;
+    }
+    
+    /* Correções para a seção experience */
+    .experience-details-container {
+      position: static !important;
+      top: 0 !important;
+      transform: none !important;
+    }
+    
+    .experience-details-container .about-container {
+      position: static !important;
+      transform: none !important;
+    }
+    
+    /* Centralização do container de habilidades */
+    .article-container {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 1rem !important;
+      justify-content: center !important;
+      margin: 0 auto !important;
+      width: 100% !important;
+      max-width: 400px !important;
+    }
+    
+    article {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+    
+    /* Correções para a seção projects */
+    .projects-container {
+      height: auto !important;
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    
+    /* Correção específica para os projetos */
+    .project-container {
+      width: 100% !important;
+      max-width: 300px !important;
+      height: auto !important;
+      margin-bottom: 2rem !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    
+    .project-image-container {
+      height: auto !important;
+      width: 100% !important;
+      margin-bottom: 1rem !important;
+      position: relative !important;
+    }
+    
+    .project-image {
+      width: 100% !important;
+      height: auto !important;
+      position: relative !important;
+    }
+    
+    .project-image img {
+      width: 100% !important;
+      height: auto !important;
+      max-height: 200px !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+    
+    .project-title-container {
+      position: static !important;
+      margin: 1rem 0 !important;
+      height: auto !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+    
+    .project-title-container h3 {
+      margin: 0 !important;
+      font-size: 1.5rem !important;
+      color: black !important;
+      background: none !important;
+    }
+    
+    .buttons-container {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      gap: 1rem !important;
+    }
+    
+    /* Correções para a seção contact */
+    .contact-info-container {
+      width: 100% !important;
+      max-width: 300px !important;
+      flex-direction: column !important;
+      height: auto !important;
+      padding: 1rem !important;
+      gap: 1rem !important;
+    }
+    
+    #contact .nav-links-container {
+      position: static !important;
+      transform: none !important;
+      margin-top: 2rem !important;
+    }
+    
+    #contact .nav-links-container .nav-links {
+      flex-direction: column !important;
+      gap: 0.5rem !important;
+    }
+    
+    .copyright {
+      position: static !important;
+      margin-top: 1rem !important;
+    }
+  }
+  
+  /* Ajustes adicionais para telas médias */
+  @media screen and (max-width: 768px) {
+    #profile .section__pic-container,
+    #about .section__pic-container {
+      width: 180px !important;
+      height: 180px !important;
+    }
+    
+    /* Ajuste para telas médias - container de habilidades */
+    .article-container {
+      max-width: 350px !important;
+    }
+  }
+  
+  /* Ajustes adicionais para telas muito pequenas */
+  @media screen and (max-width: 480px) {
+    #profile .section__pic-container,
+    #about .section__pic-container {
+      width: 150px !important;
+      height: 150px !important;
+    }
+    
+    .title {
+      font-size: 1.75rem !important;
+    }
+    
+    .section__text__p2 {
+      font-size: 1.25rem !important;
+    }
+    
+    .btn-container {
+      flex-direction: column !important;
+      gap: 0.75rem !important;
+    }
+    
+    /* Ajuste para telas pequenas - container de habilidades */
+    .article-container {
+      grid-template-columns: 1fr !important;
+      max-width: 250px !important;
+    }
+    
+    .buttons-container {
+      flex-direction: column !important;
+      gap: 0.75rem !important;
+    }
+  }
